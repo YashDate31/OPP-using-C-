@@ -1,4 +1,6 @@
 // * Overloading the binary plus (+) operator to add two Complex objects.
+using namespace std;
+
 
 #include <iostream>
 
@@ -17,7 +19,7 @@ public:
     }
 
     void print() {
-        std::cout << real << " + " << imag << "i" << std::endl;
+        cout << real << " + " << imag << "i" << endl;
     }
 };
 
@@ -29,10 +31,11 @@ int main() {
     c3 = c1 + c2; // Calls the operator+ member function
 
     c1.print();
-    std::cout << " + ";
+    cout << " + ";
     c2.print();
-    std::cout << " = ";
+    cout << " = ";
     c3.print();
 
     return 0;
 }
+

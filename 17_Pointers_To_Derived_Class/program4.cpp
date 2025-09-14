@@ -1,20 +1,22 @@
 // * Virtual functions in a multilevel inheritance scenario.
+using namespace std;
+
 
 #include <iostream>
 
 class Grandparent {
 public:
-    virtual void sayHi() { std::cout << "Hi from Grandparent." << std::endl; }
+    virtual void sayHi() { cout << "Hi from Grandparent." << endl; }
 };
 
 class Parent : public Grandparent {
 public:
-    void sayHi() override { std::cout << "Hi from Parent." << std::endl; }
+    void sayHi() override { cout << "Hi from Parent." << endl; }
 };
 
 class Child : public Parent {
 public:
-    void sayHi() override { std::cout << "Hi from Child." << std::endl; }
+    void sayHi() override { cout << "Hi from Child." << endl; }
 };
 
 int main() {
@@ -27,3 +29,4 @@ int main() {
 
     return 0;
 }
+

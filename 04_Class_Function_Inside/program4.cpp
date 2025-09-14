@@ -1,4 +1,6 @@
 // * Implements a Person class with a function to introduce themselves.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -23,3 +25,4 @@ int main() {
 
     return 0;
 }
+

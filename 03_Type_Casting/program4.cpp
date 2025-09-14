@@ -1,4 +1,6 @@
 // * Demonstrates how integer division differs from floating-point division.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -17,3 +19,4 @@ int main() {
 
     return 0;
 }
+

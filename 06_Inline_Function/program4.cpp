@@ -1,4 +1,6 @@
 // * Uses an inline function to add two numbers.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -12,3 +14,4 @@ int main() {
     cout << "The sum is: " << add(x, y) << endl;
     return 0;
 }
+

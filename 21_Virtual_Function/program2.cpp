@@ -1,25 +1,27 @@
 // * Demonstrates runtime polymorphism with different shapes.
+using namespace std;
+
 
 #include <iostream>
 
 class Shape {
 public:
     virtual void draw() {
-        std::cout << "Drawing a generic shape." << std::endl;
+        cout << "Drawing a generic shape." << endl;
     }
 };
 
 class Circle : public Shape {
 public:
     void draw() override {
-        std::cout << "Drawing a circle." << std::endl;
+        cout << "Drawing a circle." << endl;
     }
 };
 
 class Square : public Shape {
 public:
     void draw() override {
-        std::cout << "Drawing a square." << std::endl;
+        cout << "Drawing a square." << endl;
     }
 };
 
@@ -36,3 +38,4 @@ int main() {
 
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Converts a character to its integer ASCII value using a modern C++ cast.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -14,3 +16,4 @@ int main() {
 
     return 0;
 }
+

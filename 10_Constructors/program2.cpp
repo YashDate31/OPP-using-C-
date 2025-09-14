@@ -1,22 +1,25 @@
 // * A class with a parameterized constructor to set initial values.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
+using namespace std;
 
 class Person {
 public:
-    std::string name;
+    string name;
     int age;
 
     // Parameterized constructor
-    Person(std::string n, int a) {
+    Person(string n, int a) {
         name = n;
         age = a;
-        std::cout << "Parameterized constructor called for " << name << std::endl;
+        cout << "Parameterized constructor called for " << name << endl;
     }
 
     void display() {
-        std::cout << "Name: " << name << ", Age: " << age << std::endl;
+        cout << "Name: " << name << ", Age: " << age << endl;
     }
 };
 
@@ -25,3 +28,4 @@ int main() {
     p1.display();
     return 0;
 }
+

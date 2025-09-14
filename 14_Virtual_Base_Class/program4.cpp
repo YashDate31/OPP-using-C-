@@ -1,4 +1,6 @@
 // * Without virtual base class, showing the ambiguity error.
+using namespace std;
+
 
 #include <iostream>
 
@@ -14,11 +16,11 @@ class Final : public Derived1, public Derived2 {
 public:
     void show() {
         // AMBIGUITY ERROR: which 'value' to use? Derived1's or Derived2's?
-        // std::cout << value << std::endl; 
+        // cout << value << endl; 
         
         // To fix without virtual, you must specify the path
-        std::cout << "Value via Derived1: " << Derived1::value << std::endl;
-        std::cout << "Value via Derived2: " << Derived2::value << std::endl;
+        cout << "Value via Derived1: " << Derived1::value << endl;
+        cout << "Value via Derived2: " << Derived2::value << endl;
     }
 };
 
@@ -27,3 +29,4 @@ int main() {
     f.show();
     return 0;
 }
+

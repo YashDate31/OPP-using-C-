@@ -1,19 +1,21 @@
 // * Reads numbers from a file sequentially and calculates their sum.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
 
 int main() {
-    std::ifstream inFile("sequential_data.txt");
+    ifstream inFile("sequential_data.txt");
 
     if (!inFile) {
-        std::cerr << "Error opening file. Please run program1 first." << std::endl;
+        cerr << "Error opening file. Please run program1 first." << endl;
         return 1;
     }
 
     int number;
     int sum = 0;
-    std::cout << "Reading numbers from file and summing them..." << std::endl;
+    cout << "Reading numbers from file and summing them..." << endl;
 
     // Read until the end of the file
     while (inFile >> number) {
@@ -21,7 +23,8 @@ int main() {
     }
 
     inFile.close();
-    std::cout << "Sum of numbers is: " << sum << std::endl;
+    cout << "Sum of numbers is: " << sum << endl;
 
     return 0;
 }
+

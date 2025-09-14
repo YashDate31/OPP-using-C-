@@ -1,4 +1,6 @@
 // * Overloading the unary minus (-) operator using a friend function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -7,7 +9,7 @@ private:
     int x, y;
 public:
     Point(int a = 0, int b = 0) : x(a), y(b) {}
-    void display() { std::cout << "(" << x << ", " << y << ")" << std::endl; }
+    void display() { cout << "(" << x << ", " << y << ")" << endl; }
     friend Point operator-(Point &p);
 };
 
@@ -20,13 +22,14 @@ int main() {
     Point p1(10, 20);
     Point p2;
 
-    std::cout << "p1 is ";
+    cout << "p1 is ";
     p1.display();
 
     p2 = -p1; // Calls the friend operator-()
 
-    std::cout << "p2 is ";
+    cout << "p2 is ";
     p2.display();
 
     return 0;
 }
+

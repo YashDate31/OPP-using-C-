@@ -1,4 +1,6 @@
 // * Write a program to demonstrate the scope resolution operator (::) to define a member function outside the class.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -22,7 +24,7 @@ public:
 
 // Function definition outside the class using scope resolution operator
 void MyClass::printMessage() {
-    std::cout << "This message is from a function defined outside the class." << std::endl;
+    cout << "This message is from a function defined outside the class." << endl;
 }
 
 int main() {
@@ -30,3 +32,4 @@ int main() {
     obj.printMessage();
     return 0;
 }
+

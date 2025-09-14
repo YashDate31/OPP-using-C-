@@ -1,4 +1,6 @@
 // * An interface-like class with only pure virtual functions.
+using namespace std;
+
 
 #include <iostream>
 
@@ -12,7 +14,7 @@ public:
 class ConsoleLogger : public ILogger {
 public:
     void logMessage(const char* message) override {
-        std::cout << "[CONSOLE]: " << message << std::endl;
+        cout << "[CONSOLE]: " << message << endl;
     }
 };
 
@@ -25,3 +27,4 @@ int main() {
     doSomething(logger);
     return 0;
 }
+

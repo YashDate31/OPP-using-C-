@@ -1,4 +1,6 @@
 // * A Student class where student details are printed by an external function.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -29,3 +31,4 @@ int main() {
 
     return 0;
 }
+

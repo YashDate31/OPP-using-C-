@@ -1,4 +1,6 @@
 // * Defines a Car class with its functions declared inside but defined outside.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -26,3 +28,4 @@ int main() {
 
     return 0;
 }
+

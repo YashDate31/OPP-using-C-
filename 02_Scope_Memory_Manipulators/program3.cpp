@@ -1,4 +1,6 @@
 // * Write a program to use manipulators like setw, setprecision, and fixed.
+using namespace std;
+
 
 #include <iostream>
 #include <iomanip>
@@ -23,3 +25,4 @@ int main() {
 
     return 0;
 }
+

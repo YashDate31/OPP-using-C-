@@ -1,4 +1,6 @@
 //* Write a program to dynamically allocate an array of integers and then deallocate it.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -26,3 +28,4 @@ int main() {
 
     return 0;
 }
+

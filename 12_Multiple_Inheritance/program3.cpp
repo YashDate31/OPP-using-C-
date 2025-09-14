@@ -1,18 +1,20 @@
 // * Resolving ambiguity when two base classes have a function with the same name.
+using namespace std;
+
 
 #include <iostream>
 
 class BaseA {
 public:
     void show() {
-        std::cout << "BaseA show()" << std::endl;
+        cout << "BaseA show()" << endl;
     }
 };
 
 class BaseB {
 public:
     void show() {
-        std::cout << "BaseB show()" << std::endl;
+        cout << "BaseB show()" << endl;
     }
 };
 
@@ -31,3 +33,4 @@ int main() {
     dm.BaseB::show();   // Another way to resolve ambiguity
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Multiple classes ('Son', 'Daughter') inherit from a single base class ('Father').
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -6,18 +8,18 @@
 // Base class
 class Father {
 public:
-    std::string surname = "Smith";
+    string surname = "Smith";
     void displaySurname() {
-        std::cout << "Surname: " << surname << std::endl;
+        cout << "Surname: " << surname << endl;
     }
 };
 
 // Derived class 1
 class Son : public Father {
 public:
-    std::string name = "John";
+    string name = "John";
     void displayName() {
-        std::cout << "Name: " << name << " ";
+        cout << "Name: " << name << " ";
         displaySurname();
     }
 };
@@ -25,9 +27,9 @@ public:
 // Derived class 2
 class Daughter : public Father {
 public:
-    std::string name = "Jane";
+    string name = "Jane";
     void displayName() {
-        std::cout << "Name: " << name << " ";
+        cout << "Name: " << name << " ";
         displaySurname();
     }
 };
@@ -39,3 +41,4 @@ int main() {
     d.displayName();
     return 0;
 }
+

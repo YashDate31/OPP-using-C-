@@ -1,25 +1,27 @@
 // * A derived class inherits from two base classes with functions.
+using namespace std;
+
 
 #include <iostream>
 
 class Base1 {
 public:
     void func1() {
-        std::cout << "Function from Base1" << std::endl;
+        cout << "Function from Base1" << endl;
     }
 };
 
 class Base2 {
 public:
     void func2() {
-        std::cout << "Function from Base2" << std::endl;
+        cout << "Function from Base2" << endl;
     }
 };
 
 class Derived : public Base1, public Base2 {
 public:
     void derivedFunc() {
-        std::cout << "Function from Derived" << std::endl;
+        cout << "Function from Derived" << endl;
     }
 };
 
@@ -30,3 +32,4 @@ int main() {
     d.derivedFunc(); // from Derived
     return 0;
 }
+

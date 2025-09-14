@@ -1,29 +1,31 @@
 // * Demonstrates how the virtual base class constructor is called only once.
+using namespace std;
+
 
 #include <iostream>
 
 class A {
 public:
     int a_data;
-    A() { a_data = 10; std::cout << "A's constructor" << std::endl; }
+    A() { a_data = 10; cout << "A's constructor" << endl; }
 };
 
 class B : virtual public A {
 public:
-    B() { std::cout << "B's constructor" << std::endl; }
+    B() { cout << "B's constructor" << endl; }
 };
 
 class C : virtual public A {
 public:
-    C() { std::cout << "C's constructor" << std::endl; }
+    C() { cout << "C's constructor" << endl; }
 };
 
 class D : public B, public C {
 public:
-    D() { std::cout << "D's constructor" << std::endl; }
+    D() { cout << "D's constructor" << endl; }
     void show() {
         // No ambiguity in accessing a_data
-        std::cout << "a_data is " << a_data << std::endl;
+        cout << "a_data is " << a_data << endl;
     }
 };
 
@@ -32,3 +34,4 @@ int main() {
     obj.show();
     return 0;
 }
+

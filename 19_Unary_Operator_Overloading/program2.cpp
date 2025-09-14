@@ -1,4 +1,6 @@
 // * Overloading the pre-increment operator (++) using a member function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -19,11 +21,12 @@ public:
 
 int main() {
     Counter c1(5);
-    std::cout << "Initial count: " << c1.getCount() << std::endl;
+    cout << "Initial count: " << c1.getCount() << endl;
 
     ++c1; // Calls operator++()
 
-    std::cout << "After pre-increment: " << c1.getCount() << std::endl;
+    cout << "After pre-increment: " << c1.getCount() << endl;
 
     return 0;
 }
+

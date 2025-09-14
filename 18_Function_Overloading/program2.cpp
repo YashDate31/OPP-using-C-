@@ -1,17 +1,19 @@
 // * Overloading a function with different types of parameters.
+using namespace std;
+
 
 #include <iostream>
 
 class Display {
 public:
     void print(int i) {
-        std::cout << "Printing int: " << i << std::endl;
+        cout << "Printing int: " << i << endl;
     }
     void print(double f) {
-        std::cout << "Printing float: " << f << std::endl;
+        cout << "Printing float: " << f << endl;
     }
     void print(const char* c) {
-        std::cout << "Printing string: " << c << std::endl;
+        cout << "Printing string: " << c << endl;
     }
 };
 
@@ -22,3 +24,4 @@ int main() {
     d.print("Hello C++");
     return 0;
 }
+

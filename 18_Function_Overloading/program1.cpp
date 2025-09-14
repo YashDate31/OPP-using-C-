@@ -1,14 +1,16 @@
 // * Overloading a function with different numbers of parameters.
+using namespace std;
+
 
 #include <iostream>
 
 class Print {
 public:
     void show(int i) {
-        std::cout << "Here is an integer: " << i << std::endl;
+        cout << "Here is an integer: " << i << endl;
     }
     void show(int i, int j) {
-        std::cout << "Here are two integers: " << i << " and " << j << std::endl;
+        cout << "Here are two integers: " << i << " and " << j << endl;
     }
 };
 
@@ -18,3 +20,4 @@ int main() {
     p.show(10, 20);
     return 0;
 }
+

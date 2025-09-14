@@ -1,4 +1,6 @@
 // * Write a program to read a full line of text, including spaces.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -11,3 +13,4 @@ int main() {
     cout << "Hello, " << fullName << "!" << endl;
     return 0;
 }
+

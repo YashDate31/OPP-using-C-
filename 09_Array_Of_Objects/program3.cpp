@@ -1,4 +1,6 @@
 // * Creates an array of Point objects and initializes them.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -31,3 +33,4 @@ int main() {
 
     return 0;
 }
+

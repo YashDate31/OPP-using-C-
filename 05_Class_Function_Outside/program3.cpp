@@ -1,4 +1,6 @@
 // * A BankAccount class with deposit and withdraw functions defined externally.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -39,13 +41,14 @@ float BankAccount::getBalance() {
 int main() {
     BankAccount acc;
     acc.setInitialBalance(1000);
-    std::cout << "Initial Balance: " << acc.getBalance() << std::endl;
+    cout << "Initial Balance: " << acc.getBalance() << endl;
 
     acc.deposit(500);
     acc.withdraw(200);
     acc.withdraw(1500);
 
-    std::cout << "Final Balance: " << acc.getBalance() << std::endl;
+    cout << "Final Balance: " << acc.getBalance() << endl;
 
     return 0;
 }
+

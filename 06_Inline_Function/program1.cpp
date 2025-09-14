@@ -1,4 +1,6 @@
 // * Uses an inline function to quickly calculate the cube of a number.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -12,3 +14,4 @@ int main() {
     cout << "The cube of " << num << " is: " << cube(num) << endl;
     return 0;
 }
+

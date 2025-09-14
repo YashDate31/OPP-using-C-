@@ -1,4 +1,6 @@
 // * Write a program to read and write different data types (integer, float, character).
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -24,3 +26,4 @@ int main() {
 
     return 0;
 }
+

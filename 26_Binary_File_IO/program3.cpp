@@ -1,4 +1,6 @@
 // * Writes an array of integers to a binary file.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
@@ -7,10 +9,10 @@ int main() {
     int numbers[] = {10, 20, 30, 40, 50};
     int n = sizeof(numbers) / sizeof(int);
 
-    std::ofstream outFile("numbers.bin", std::ios::binary);
+    ofstream outFile("numbers.bin", std::ios::binary);
 
     if (!outFile) {
-        std::cerr << "Error creating file." << std::endl;
+        cerr << "Error creating file." << endl;
         return 1;
     }
 
@@ -18,7 +20,8 @@ int main() {
     outFile.write(reinterpret_cast<char*>(numbers), sizeof(numbers));
 
     outFile.close();
-    std::cout << "Successfully wrote array to numbers.bin" << std::endl;
+    cout << "Successfully wrote array to numbers.bin" << endl;
 
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * 'CheckingAccount' and 'SavingsAccount' inherit from 'BankAccount'.
+using namespace std;
+
 
 #include <iostream>
 
@@ -12,7 +14,7 @@ public:
 class CheckingAccount : public BankAccount {
 public:
     void writeCheck() {
-        std::cout << "Wrote a check from account with balance: " << balance << std::endl;
+        cout << "Wrote a check from account with balance: " << balance << endl;
     }
 };
 
@@ -20,7 +22,7 @@ class SavingsAccount : public BankAccount {
 public:
     void earnInterest() {
         balance *= 1.05; // 5% interest
-        std::cout << "Interest earned. New balance: " << balance << std::endl;
+        cout << "Interest earned. New balance: " << balance << endl;
     }
 };
 
@@ -33,3 +35,4 @@ int main() {
     sav.earnInterest();
     return 0;
 }
+

@@ -1,10 +1,12 @@
 // * Checks if a file copy was successful by comparing file sizes.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
 
-long getFileSize(const std::string& filename) {
-    std::ifstream file(filename, std::ios::binary | std::ios::ate);
+long getFileSize(const string& filename) {
+    ifstream file(filename, std::ios::binary | std::ios::ate);
     if (!file) return -1;
     return file.tellg();
 }
@@ -13,10 +15,10 @@ int main() {
     const char* src = "file_to_copy.txt";
     const char* dst = "copied_file.txt";
 
-    std::ofstream(src) << "Some data to verify copy.";
+    ofstream(src) << "Some data to verify copy.";
 
-    std::ifstream source(src, std::ios::binary);
-    std::ofstream dest(dst, std::ios::binary);
+    ifstream source(src, std::ios::binary);
+    ofstream dest(dst, std::ios::binary);
 
     dest << source.rdbuf(); // A fast way to copy files
 
@@ -24,10 +26,11 @@ int main() {
     dest.close();
 
     if (getFileSize(src) == getFileSize(dst) && getFileSize(src) != -1) {
-        std::cout << "File copy successful (sizes match)." << std::endl;
+        cout << "File copy successful (sizes match)." << endl;
     } else {
-        std::cerr << "File copy failed." << std::endl;
+        cerr << "File copy failed." << endl;
     }
 
     return 0;
 }
+

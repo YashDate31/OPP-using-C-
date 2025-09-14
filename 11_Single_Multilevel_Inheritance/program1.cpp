@@ -1,4 +1,6 @@
 // * A simple example of single inheritance with a base and derived class.
+using namespace std;
+
 
 #include <iostream>
 
@@ -6,7 +8,7 @@
 class Animal {
 public:
     void eat() {
-        std::cout << "I can eat!" << std::endl;
+        cout << "I can eat!" << endl;
     }
 };
 
@@ -14,7 +16,7 @@ public:
 class Dog : public Animal {
 public:
     void bark() {
-        std::cout << "I can bark!" << std::endl;
+        cout << "I can bark!" << endl;
     }
 };
 
@@ -24,3 +26,4 @@ int main() {
     myDog.bark(); // Accessing derived class function
     return 0;
 }
+

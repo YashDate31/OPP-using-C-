@@ -1,4 +1,6 @@
 // * Compares two numbers using a simple inline function.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -11,3 +13,4 @@ int main() {
     cout << "The greater number is: " << max(10, 20) << endl;
     return 0;
 }
+

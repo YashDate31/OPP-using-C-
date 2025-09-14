@@ -1,19 +1,22 @@
 // * Writing to a file using the open() member function.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
 
 int main() {
-    std::ofstream outFile;
+    ofstream outFile;
     outFile.open("sample2.txt"); // Open the file using the open() function
 
     if (outFile.is_open()) {
-        outFile << "This file was opened using the .open() method." << std::endl;
+        outFile << "This file was opened using the .open() method." << endl;
         outFile.close();
-        std::cout << "Successfully wrote to sample2.txt" << std::endl;
+        cout << "Successfully wrote to sample2.txt" << endl;
     } else {
-        std::cout << "Error opening file!" << std::endl;
+        cout << "Error opening file!" << endl;
     }
 
     return 0;
 }
+

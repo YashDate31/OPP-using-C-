@@ -1,4 +1,6 @@
 // * A static member function can be called without creating an object.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -17,3 +19,4 @@ int main() {
 
     return 0;
 }
+

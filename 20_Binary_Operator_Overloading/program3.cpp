@@ -1,4 +1,6 @@
 // * Overloading the binary plus (+) operator using a friend function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -7,7 +9,7 @@ private:
     int x, y;
 public:
     Vector(int a = 0, int b = 0) : x(a), y(b) {}
-    void display() { std::cout << "<" << x << ", " << y << ">" << std::endl; }
+    void display() { cout << "<" << x << ", " << y << ">" << endl; }
     friend Vector operator+(const Vector& v1, const Vector& v2);
 };
 
@@ -24,10 +26,11 @@ int main() {
     vec3 = vec1 + vec2; // Calls the friend operator+ function
 
     vec1.display();
-    std::cout << " + ";
+    cout << " + ";
     vec2.display();
-    std::cout << " = ";
+    cout << " = ";
     vec3.display();
 
     return 0;
 }
+

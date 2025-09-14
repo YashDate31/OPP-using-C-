@@ -1,12 +1,14 @@
 // * Creating objects on the heap using pointers and 'new'.
+using namespace std;
+
 
 #include <iostream>
 
 class Entity {
 public:
-    Entity() { std::cout << "Entity created on the heap." << std::endl; }
-    ~Entity() { std::cout << "Entity destroyed." << std::endl; }
-    void info() { std::cout << "I am an entity." << std::endl; }
+    Entity() { cout << "Entity created on the heap." << endl; }
+    ~Entity() { cout << "Entity destroyed." << endl; }
+    void info() { cout << "I am an entity." << endl; }
 };
 
 int main() {
@@ -20,3 +22,4 @@ int main() {
 
     return 0;
 }
+

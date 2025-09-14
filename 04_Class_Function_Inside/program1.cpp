@@ -1,4 +1,6 @@
 // * Defines a simple Dog class with a bark() function inside.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -21,3 +23,4 @@ int main() {
 
     return 0;
 }
+

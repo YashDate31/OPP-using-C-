@@ -1,4 +1,6 @@
 // * Creates a Rectangle class that calculates its area with a function inside.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -23,3 +25,4 @@ int main() {
 
     return 0;
 }
+

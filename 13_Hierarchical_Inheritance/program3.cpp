@@ -1,4 +1,6 @@
 // * 'Manager' and 'Worker' classes both inherit from 'Employee'.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -13,14 +15,14 @@ public:
 class Manager : public Employee {
 public:
     void manage() {
-        std::cout << "Manager with ID " << emp_id << " is managing." << std::endl;
+        cout << "Manager with ID " << emp_id << " is managing." << endl;
     }
 };
 
 class Worker : public Employee {
 public:
     void work() {
-        std::cout << "Worker with ID " << emp_id << " is working." << std::endl;
+        cout << "Worker with ID " << emp_id << " is working." << endl;
     }
 };
 
@@ -33,3 +35,4 @@ int main() {
     w.work();
     return 0;
 }
+

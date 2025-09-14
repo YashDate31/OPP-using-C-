@@ -1,4 +1,6 @@
 // * Overloading the logical NOT (!) operator using a friend function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -7,7 +9,7 @@ private:
     bool value;
 public:
     TruthValue(bool v) : value(v) {}
-    void display() { std::cout << (value ? "true" : "false") << std::endl; }
+    void display() { cout << (value ? "true" : "false") << endl; }
     friend bool operator!(const TruthValue& tv);
 };
 
@@ -17,10 +19,11 @@ bool operator!(const TruthValue& tv) {
 
 int main() {
     TruthValue t(true);
-    std::cout << "Original value: ";
+    cout << "Original value: ";
     t.display();
 
-    std::cout << "Negated value: " << (!t ? "true" : "false") << std::endl;
+    cout << "Negated value: " << (!t ? "true" : "false") << endl;
 
     return 0;
 }
+

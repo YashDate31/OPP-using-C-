@@ -1,18 +1,20 @@
 // * A base class pointer can point to a derived class object.
+using namespace std;
+
 
 #include <iostream>
 
 class Base {
 public:
     void baseFunc() {
-        std::cout << "Function from Base class." << std::endl;
+        cout << "Function from Base class." << endl;
     }
 };
 
 class Derived : public Base {
 public:
     void derivedFunc() {
-        std::cout << "Function from Derived class." << std::endl;
+        cout << "Function from Derived class." << endl;
     }
 };
 
@@ -30,3 +32,4 @@ int main() {
 
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Copies formatted data (like name and age) from one file to another.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
@@ -6,29 +8,30 @@
 
 int main() {
     // Create a source file with formatted data
-    std::ofstream source_out("formatted_source.txt");
-    source_out << "Alice " << 30 << std::endl;
-    source_out << "Bob " << 25 << std::endl;
+    ofstream source_out("formatted_source.txt");
+    source_out << "Alice " << 30 << endl;
+    source_out << "Bob " << 25 << endl;
     source_out.close();
 
-    std::ifstream source_in("formatted_source.txt");
-    std::ofstream dest_out("formatted_destination.txt");
+    ifstream source_in("formatted_source.txt");
+    ofstream dest_out("formatted_destination.txt");
 
     if (!source_in.is_open() || !dest_out.is_open()) {
-        std::cerr << "Error opening files!" << std::endl;
+        cerr << "Error opening files!" << endl;
         return 1;
     }
 
-    std::string name;
+    string name;
     int age;
     while (source_in >> name >> age) { // Read formatted input
-        dest_out << "Name: " << name << ", Age: " << age << std::endl; // Write formatted output
+        dest_out << "Name: " << name << ", Age: " << age << endl; // Write formatted output
     }
 
     source_in.close();
     dest_out.close();
 
-    std::cout << "Formatted data copied successfully." << std::endl;
+    cout << "Formatted data copied successfully." << endl;
 
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Combines a static member and a static function to track object count.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -29,3 +31,4 @@ int main() {
 
     return 0;
 }
+

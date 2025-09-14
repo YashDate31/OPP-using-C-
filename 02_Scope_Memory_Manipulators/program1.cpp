@@ -1,4 +1,6 @@
 // * Write a program to demonstrate the scope resolution operator (::) for global variables.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -11,3 +13,4 @@ int main() {
     cout << "Global x: " << ::x << endl; // Accessing global x using scope resolution operator
     return 0;
 }
+

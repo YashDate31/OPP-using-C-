@@ -1,4 +1,6 @@
 // * Reading from a file using the fstream constructor.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
@@ -6,18 +8,19 @@
 
 int main() {
     // Open a text file for reading using the constructor
-    std::ifstream inFile("sample1.txt");
-    std::string line;
+    ifstream inFile("sample1.txt");
+    string line;
 
     if (inFile.is_open()) {
-        std::cout << "Reading from sample1.txt:" << std::endl;
+        cout << "Reading from sample1.txt:" << endl;
         while (getline(inFile, line)) {
-            std::cout << line << std::endl;
+            cout << line << endl;
         }
         inFile.close();
     } else {
-        std::cout << "Error opening file! Make sure sample1.txt exists." << std::endl;
+        cout << "Error opening file! Make sure sample1.txt exists." << endl;
     }
 
     return 0;
 }
+

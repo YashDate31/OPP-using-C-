@@ -1,16 +1,18 @@
 // * Copies content character by character.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
 
 int main() {
-    std::ifstream sourceFile("char_source.txt");
-    std::ofstream destFile("char_destination.txt");
+    ifstream sourceFile("char_source.txt");
+    ofstream destFile("char_destination.txt");
 
-    std::ofstream("char_source.txt") << "Copy me!";
+    ofstream("char_source.txt") << "Copy me!";
 
     if (!sourceFile.is_open() || !destFile.is_open()) {
-        std::cerr << "Error opening files!" << std::endl;
+        cerr << "Error opening files!" << endl;
         return 1;
     }
 
@@ -22,7 +24,8 @@ int main() {
     sourceFile.close();
     destFile.close();
 
-    std::cout << "File copied character by character." << std::endl;
+    cout << "File copied character by character." << endl;
 
     return 0;
 }
+

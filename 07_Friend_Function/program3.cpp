@@ -1,4 +1,6 @@
 // * An external function is made a friend of a class to access its private data.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -21,3 +23,4 @@ int main() {
     showSecret(myObj); // The external function can access the private member
     return 0;
 }
+

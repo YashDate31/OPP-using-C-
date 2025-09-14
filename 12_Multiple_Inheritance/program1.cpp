@@ -1,25 +1,27 @@
 // * A class 'Bat' inherits from two base classes: 'Mammal' and 'WingedAnimal'.
+using namespace std;
+
 
 #include <iostream>
 
 class Mammal {
 public:
     Mammal() {
-        std::cout << "I am a mammal." << std::endl;
+        cout << "I am a mammal." << endl;
     }
 };
 
 class WingedAnimal {
 public:
     WingedAnimal() {
-        std::cout << "I have wings." << std::endl;
+        cout << "I have wings." << endl;
     }
 };
 
 class Bat : public Mammal, public WingedAnimal {
 public:
     Bat() {
-        std::cout << "I am a bat." << std::endl;
+        cout << "I am a bat." << endl;
     }
 };
 
@@ -27,3 +29,4 @@ int main() {
     Bat b;
     return 0;
 }
+

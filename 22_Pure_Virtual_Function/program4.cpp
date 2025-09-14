@@ -1,4 +1,6 @@
 // * A derived class must implement all pure virtual functions from its base.
+using namespace std;
+
 
 #include <iostream>
 
@@ -12,7 +14,7 @@ public:
 class Derived1 : public Base {
 public:
     void func1() override {
-        std::cout << "Derived1's func1" << std::endl;
+        cout << "Derived1's func1" << endl;
     }
 };
 
@@ -20,7 +22,7 @@ public:
 class Derived2 : public Derived1 {
 public:
     void func2() override {
-        std::cout << "Derived2's func2" << std::endl;
+        cout << "Derived2's func2" << endl;
     }
 };
 
@@ -31,3 +33,4 @@ int main() {
     d2.func2();
     return 0;
 }
+

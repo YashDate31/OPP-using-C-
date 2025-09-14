@@ -1,4 +1,6 @@
 // * Overloading the less than (<) operator to compare two Distance objects.
+using namespace std;
+
 
 #include <iostream>
 
@@ -22,10 +24,11 @@ int main() {
     Distance d2(6, 1.2);
 
     if (d1 < d2) {
-        std::cout << "Distance d1 is less than d2." << std::endl;
+        cout << "Distance d1 is less than d2." << endl;
     } else {
-        std::cout << "Distance d1 is not less than d2." << std::endl;
+        cout << "Distance d1 is not less than d2." << endl;
     }
 
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Writes a struct to a binary file.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
@@ -12,10 +14,10 @@ int main() {
     Person p = {"John Doe", 30};
 
     // Open file in binary mode
-    std::ofstream outFile("person.bin", std::ios::binary);
+    ofstream outFile("person.bin", std::ios::binary);
 
     if (!outFile) {
-        std::cerr << "Error creating file." << std::endl;
+        cerr << "Error creating file." << endl;
         return 1;
     }
 
@@ -23,7 +25,8 @@ int main() {
     outFile.write(reinterpret_cast<char*>(&p), sizeof(Person));
 
     outFile.close();
-    std::cout << "Successfully wrote Person struct to person.bin" << std::endl;
+    cout << "Successfully wrote Person struct to person.bin" << endl;
 
     return 0;
 }
+

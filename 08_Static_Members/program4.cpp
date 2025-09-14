@@ -1,4 +1,6 @@
 // * A static function modifies a static data member.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -26,3 +28,4 @@ int main() {
 
     return 0;
 }
+

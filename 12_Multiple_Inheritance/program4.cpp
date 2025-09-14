@@ -1,13 +1,15 @@
 // * A 'TeachingAssistant' class inherits from both 'Teacher' and 'Student'.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
 
 class Teacher {
 public:
-    std::string subject;
+    string subject;
     void teach() {
-        std::cout << "I can teach " << subject << "." << std::endl;
+        cout << "I can teach " << subject << "." << endl;
     }
 };
 
@@ -15,14 +17,14 @@ class Student {
 public:
     int grade;
     void study() {
-        std::cout << "I am in grade " << grade << "." << std::endl;
+        cout << "I am in grade " << grade << "." << endl;
     }
 };
 
 class TeachingAssistant : public Teacher, public Student {
 public:
     void assist() {
-        std::cout << "I assist in teaching and also study." << std::endl;
+        cout << "I assist in teaching and also study." << endl;
     }
 };
 
@@ -35,3 +37,4 @@ int main() {
     ta.assist();
     return 0;
 }
+

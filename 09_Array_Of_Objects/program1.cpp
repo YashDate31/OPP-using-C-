@@ -1,4 +1,6 @@
 // * Creates an array of Student objects and stores their data.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -33,3 +35,4 @@ int main() {
 
     return 0;
 }
+

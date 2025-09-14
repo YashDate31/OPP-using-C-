@@ -1,4 +1,6 @@
 // * A friend function swaps the private data of two different classes.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -33,15 +35,16 @@ int main() {
     Class1 obj1(10);
     Class2 obj2(20);
 
-    std::cout << "Before swap:" << std::endl;
+    cout << "Before swap:" << endl;
     obj1.display();
     obj2.display();
 
     swap(obj1, obj2);
 
-    std::cout << "\nAfter swap:" << std::endl;
+    cout << "\nAfter swap:" << endl;
     obj1.display();
     obj2.display();
 
     return 0;
 }
+

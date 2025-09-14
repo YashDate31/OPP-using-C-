@@ -1,4 +1,6 @@
 // * Calculating area of different shapes using an overloaded function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -20,8 +22,9 @@ public:
 
 int main() {
     Geometry g;
-    std::cout << "Area of square: " << g.area(5) << std::endl;
-    std::cout << "Area of rectangle: " << g.area(5, 10) << std::endl;
-    std::cout << "Area of circle: " << g.area(2.5f) << std::endl;
+    cout << "Area of square: " << g.area(5) << endl;
+    cout << "Area of rectangle: " << g.area(5, 10) << endl;
+    cout << "Area of circle: " << g.area(2.5f) << endl;
     return 0;
 }
+

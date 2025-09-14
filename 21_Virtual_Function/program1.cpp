@@ -1,18 +1,20 @@
 // * A virtual function allows a derived class to override a base class function.
+using namespace std;
+
 
 #include <iostream>
 
 class Base {
 public:
     virtual void print() { // Virtual function
-        std::cout << "Print base class" << std::endl;
+        cout << "Print base class" << endl;
     }
 };
 
 class Derived : public Base {
 public:
     void print() override { // Override the virtual function
-        std::cout << "Print derived class" << std::endl;
+        cout << "Print derived class" << endl;
     }
 };
 
@@ -26,3 +28,4 @@ int main() {
 
     return 0;
 }
+

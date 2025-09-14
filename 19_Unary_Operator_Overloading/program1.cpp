@@ -1,4 +1,6 @@
 // * Overloading the unary minus (-) operator using a member function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -9,7 +11,7 @@ public:
     Space(int a, int b, int c) : x(a), y(b), z(c) {}
 
     void display() {
-        std::cout << "x=" << x << ", y=" << y << ", z=" << z << std::endl;
+        cout << "x=" << x << ", y=" << y << ", z=" << z << endl;
     }
 
     // Overload unary minus
@@ -22,13 +24,14 @@ public:
 
 int main() {
     Space s(10, -20, 30);
-    std::cout << "Original: ";
+    cout << "Original: ";
     s.display();
 
     -s; // Calls the operator-() function
 
-    std::cout << "Negated:  ";
+    cout << "Negated:  ";
     s.display();
 
     return 0;
 }
+

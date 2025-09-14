@@ -1,4 +1,6 @@
 // * A pure virtual function makes a class abstract, so it cannot be instantiated.
+using namespace std;
+
 
 #include <iostream>
 
@@ -13,7 +15,7 @@ class Circle : public Shape {
 public:
     // Provide implementation for the pure virtual function
     void draw() override {
-        std::cout << "Drawing a circle." << std::endl;
+        cout << "Drawing a circle." << endl;
     }
 };
 
@@ -27,3 +29,4 @@ int main() {
 
     return 0;
 }
+

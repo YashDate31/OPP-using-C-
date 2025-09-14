@@ -1,4 +1,6 @@
 // * An abstract class with a pure virtual function and a normal function.
+using namespace std;
+
 
 #include <iostream>
 
@@ -9,14 +11,14 @@ public:
 
     // Normal function
     void sleep() {
-        std::cout << "This animal is sleeping." << std::endl;
+        cout << "This animal is sleeping." << endl;
     }
 };
 
 class Dog : public Animal {
 public:
     void makeSound() override {
-        std::cout << "Woof!" << std::endl;
+        cout << "Woof!" << endl;
     }
 };
 
@@ -26,3 +28,4 @@ int main() {
     myDog.sleep();
     return 0;
 }
+

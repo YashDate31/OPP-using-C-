@@ -1,4 +1,6 @@
 // * A static data member is shared among all objects of a class.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -25,3 +27,4 @@ int main() {
 
     return 0;
 }
+

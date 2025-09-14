@@ -1,4 +1,6 @@
 // * Multilevel inheritance with 'Result' inheriting from 'Test', which inherits from 'Student'.
+using namespace std;
+
 
 #include <iostream>
 
@@ -7,7 +9,7 @@ protected:
     int roll_number;
 public:
     void set_roll_number(int r) { roll_number = r; }
-    void get_roll_number() { std::cout << "Roll number is " << roll_number << std::endl; }
+    void get_roll_number() { cout << "Roll number is " << roll_number << endl; }
 };
 
 class Test : public Student {
@@ -15,7 +17,7 @@ protected:
     float sub1, sub2;
 public:
     void set_marks(float m1, float m2) { sub1 = m1; sub2 = m2; }
-    void get_marks() { std::cout << "Marks are " << sub1 << " and " << sub2 << std::endl; }
+    void get_marks() { cout << "Marks are " << sub1 << " and " << sub2 << endl; }
 };
 
 class Result : public Test {
@@ -26,7 +28,7 @@ public:
         total = sub1 + sub2;
         get_roll_number();
         get_marks();
-        std::cout << "Total marks: " << total << std::endl;
+        cout << "Total marks: " << total << endl;
     }
 };
 
@@ -37,3 +39,4 @@ int main() {
     res.display();
     return 0;
 }
+

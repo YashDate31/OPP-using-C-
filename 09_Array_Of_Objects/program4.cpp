@@ -1,4 +1,6 @@
 // * An array of objects where each object has a constructor.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
@@ -25,3 +27,4 @@ int main() {
 
     return 0;
 }
+

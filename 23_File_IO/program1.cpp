@@ -1,20 +1,23 @@
 // * Writing to a file using the fstream constructor.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
 
 int main() {
     // Create and open a text file using the constructor
-    std::ofstream outFile("sample1.txt");
+    ofstream outFile("sample1.txt");
 
     if (outFile.is_open()) {
-        outFile << "Hello, this is line 1." << std::endl;
-        outFile << "This is line 2." << std::endl;
+        outFile << "Hello, this is line 1." << endl;
+        outFile << "This is line 2." << endl;
         outFile.close(); // Close the file
-        std::cout << "Successfully wrote to sample1.txt" << std::endl;
+        cout << "Successfully wrote to sample1.txt" << endl;
     } else {
-        std::cout << "Error opening file!" << std::endl;
+        cout << "Error opening file!" << endl;
     }
 
     return 0;
 }
+

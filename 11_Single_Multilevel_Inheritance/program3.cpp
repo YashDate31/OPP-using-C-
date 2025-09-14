@@ -1,4 +1,6 @@
 // * A class 'GrandChild' inherits from 'Child', which inherits from 'Parent'.
+using namespace std;
+
 
 #include <iostream>
 
@@ -6,7 +8,7 @@
 class Parent {
 public:
     void parentFunc() {
-        std::cout << "This is the parent." << std::endl;
+        cout << "This is the parent." << endl;
     }
 };
 
@@ -14,7 +16,7 @@ public:
 class Child : public Parent {
 public:
     void childFunc() {
-        std::cout << "This is the child." << std::endl;
+        cout << "This is the child." << endl;
     }
 };
 
@@ -22,7 +24,7 @@ public:
 class GrandChild : public Child {
 public:
     void grandChildFunc() {
-        std::cout << "This is the grandchild." << std::endl;
+        cout << "This is the grandchild." << endl;
     }
 };
 
@@ -33,3 +35,4 @@ int main() {
     gc.grandChildFunc(); // From GrandChild
     return 0;
 }
+

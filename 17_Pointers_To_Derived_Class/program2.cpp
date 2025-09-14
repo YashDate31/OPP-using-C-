@@ -1,18 +1,20 @@
 // * Using a base class pointer to call a virtual function.
+using namespace std;
+
 
 #include <iostream>
 
 class Animal {
 public:
     virtual void makeSound() { // Virtual function
-        std::cout << "Animal makes a sound." << std::endl;
+        cout << "Animal makes a sound." << endl;
     }
 };
 
 class Dog : public Animal {
 public:
     void makeSound() override { // Override the function
-        std::cout << "Dog barks." << std::endl;
+        cout << "Dog barks." << endl;
     }
 };
 
@@ -27,3 +29,4 @@ int main() {
 
     return 0;
 }
+

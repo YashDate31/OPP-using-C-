@@ -1,23 +1,26 @@
 // * Reading from a file using the open() member function.
+using namespace std;
+
 
 #include <iostream>
 #include <fstream>
 #include <string>
 
 int main() {
-    std::ifstream inFile;
+    ifstream inFile;
     inFile.open("sample2.txt");
-    std::string line;
+    string line;
 
     if (inFile.is_open()) {
-        std::cout << "Reading from sample2.txt:" << std::endl;
+        cout << "Reading from sample2.txt:" << endl;
         while (getline(inFile, line)) {
-            std::cout << line << std::endl;
+            cout << line << endl;
         }
         inFile.close();
     } else {
-        std::cout << "Error opening file! Make sure sample2.txt exists." << std::endl;
+        cout << "Error opening file! Make sure sample2.txt exists." << endl;
     }
 
     return 0;
 }
+

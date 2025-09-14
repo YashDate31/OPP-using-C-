@@ -1,4 +1,6 @@
 // * A pointer to an object is used to access its members.
+using namespace std;
+
 
 #include <iostream>
 
@@ -6,7 +8,7 @@ class MyClass {
 public:
     int data = 10;
     void showData() {
-        std::cout << "Data is: " << data << std::endl;
+        cout << "Data is: " << data << endl;
     }
 };
 
@@ -18,7 +20,8 @@ int main() {
 
     // Accessing members using the arrow operator (->)
     ptr->showData();
-    std::cout << "Accessing data directly: " << ptr->data << std::endl;
+    cout << "Accessing data directly: " << ptr->data << endl;
 
     return 0;
 }
+

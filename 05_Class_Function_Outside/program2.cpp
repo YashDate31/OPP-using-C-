@@ -1,4 +1,6 @@
 // * A Circle class that calculates area and circumference with external functions.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -32,8 +34,9 @@ int main() {
     Circle c;
     c.setRadius(5.0);
 
-    std::cout << "Area: " << c.getArea() << std::endl;
-    std::cout << "Circumference: " << c.getCircumference() << std::endl;
+    cout << "Area: " << c.getArea() << endl;
+    cout << "Circumference: " << c.getCircumference() << endl;
 
     return 0;
 }
+

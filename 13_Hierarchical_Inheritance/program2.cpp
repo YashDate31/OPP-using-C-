@@ -1,25 +1,27 @@
 // * 'Cat' and 'Dog' both inherit from the 'Animal' base class.
+using namespace std;
+
 
 #include <iostream>
 
 class Animal {
 public:
     void eat() {
-        std::cout << "This animal eats food." << std::endl;
+        cout << "This animal eats food." << endl;
     }
 };
 
 class Dog : public Animal {
 public:
     void bark() {
-        std::cout << "Dog barks." << std::endl;
+        cout << "Dog barks." << endl;
     }
 };
 
 class Cat : public Animal {
 public:
     void meow() {
-        std::cout << "Cat meows." << std::endl;
+        cout << "Cat meows." << endl;
     }
 };
 
@@ -32,3 +34,4 @@ int main() {
     myCat.meow();
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Write a program to dynamically allocate and deallocate memory for an integer using new and delete.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -11,3 +13,4 @@ int main() {
     ptr = nullptr; // Avoid dangling pointer
     return 0;
 }
+

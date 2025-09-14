@@ -1,4 +1,6 @@
 // * Using 'this' to return the current object and allow function chaining.
+using namespace std;
+
 
 #include <iostream>
 
@@ -19,7 +21,7 @@ public:
     }
 
     void print() {
-        std::cout << "Current value: " << value << std::endl;
+        cout << "Current value: " << value << endl;
     }
 };
 
@@ -29,3 +31,4 @@ int main() {
     c.print();
     return 0;
 }
+

@@ -1,4 +1,6 @@
 // * Shows how a smaller data type (int) automatically converts to a larger one (float).
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -14,3 +16,4 @@ int main() {
 
     return 0;
 }
+

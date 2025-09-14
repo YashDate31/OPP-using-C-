@@ -1,13 +1,15 @@
 // * Derived class constructor calls base constructor and initializes its own members.
+using namespace std;
+
 
 #include <iostream>
 #include <string>
 
 class Person {
 protected:
-    std::string name;
+    string name;
 public:
-    Person(std::string n) : name(n) {}
+    Person(string n) : name(n) {}
 };
 
 class Student : public Person {
@@ -15,10 +17,10 @@ private:
     int studentID;
 public:
     // Call Person's constructor and initialize studentID
-    Student(std::string n, int id) : Person(n), studentID(id) {}
+    Student(string n, int id) : Person(n), studentID(id) {}
 
     void display() {
-        std::cout << "Name: " << name << ", Student ID: " << studentID << std::endl;
+        cout << "Name: " << name << ", Student ID: " << studentID << endl;
     }
 };
 
@@ -27,3 +29,4 @@ int main() {
     s.display();
     return 0;
 }
+

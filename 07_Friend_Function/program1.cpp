@@ -1,4 +1,6 @@
 // * An external function accesses private members of two different classes.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -29,6 +31,7 @@ int add(ClassA objA, ClassB objB) {
 int main() {
     ClassA objA;
     ClassB objB;
-    std::cout << "Sum: " << add(objA, objB) << std::endl;
+    cout << "Sum: " << add(objA, objB) << endl;
     return 0;
 }
+

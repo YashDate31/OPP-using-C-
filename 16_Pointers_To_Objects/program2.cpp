@@ -1,4 +1,6 @@
 // * The 'this' pointer refers to the current object instance.
+using namespace std;
+
 
 #include <iostream>
 
@@ -19,6 +21,7 @@ public:
 
 int main() {
     Box b(15);
-    std::cout << "The length of the box is: " << b.getLength() << std::endl;
+    cout << "The length of the box is: " << b.getLength() << endl;
     return 0;
 }
+

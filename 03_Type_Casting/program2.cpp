@@ -1,4 +1,6 @@
 // * Manually converts a double to an int using a C-style cast.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -14,3 +16,4 @@ int main() {
 
     return 0;
 }
+

@@ -1,6 +1,9 @@
 // * A class with a default constructor that initializes values.
+using namespace std;
+
 
 #include <iostream>
+using namespace std;
 
 class Cube {
 private:
@@ -9,7 +12,7 @@ public:
     // Default constructor
     Cube() {
         side = 10;
-        std::cout << "Default constructor called. Side set to " << side << std::endl;
+        cout << "Default constructor called. Side set to " << side << endl;
     }
 
     int getVolume() {
@@ -19,6 +22,7 @@ public:
 
 int main() {
     Cube c1; // Default constructor is called automatically
-    std::cout << "Volume of cube is: " << c1.getVolume() << std::endl;
+    cout << "Volume of cube is: " << c1.getVolume() << endl;
     return 0;
 }
+

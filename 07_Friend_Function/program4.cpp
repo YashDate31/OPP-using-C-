@@ -1,4 +1,6 @@
 // * A global function compares private members of two different classes.
+using namespace std;
+
 
 #include <iostream>
 using namespace std;
@@ -37,3 +39,4 @@ int main() {
     compare(objA, objB);
     return 0;
 }
+

@@ -1,11 +1,13 @@
 // * A virtual function that is not overridden by the derived class.
+using namespace std;
+
 
 #include <iostream>
 
 class Entity {
 public:
     virtual void showInfo() {
-        std::cout << "This is an Entity." << std::endl;
+        cout << "This is an Entity." << endl;
     }
 };
 
@@ -13,7 +15,7 @@ class Player : public Entity {
 public:
     // Player does not override showInfo()
     void move() {
-        std::cout << "Player is moving." << std::endl;
+        cout << "Player is moving." << endl;
     }
 };
 
@@ -26,3 +28,4 @@ int main() {
     delete e_ptr;
     return 0;
 }
+

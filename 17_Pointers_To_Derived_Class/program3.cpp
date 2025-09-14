@@ -1,20 +1,22 @@
 // * A pointer to a derived class in a multilevel inheritance chain.
+using namespace std;
+
 
 #include <iostream>
 
 class A {
 public:
-    void funcA() { std::cout << "Func A" << std::endl; }
+    void funcA() { cout << "Func A" << endl; }
 };
 
 class B : public A {
 public:
-    void funcB() { std::cout << "Func B" << std::endl; }
+    void funcB() { cout << "Func B" << endl; }
 };
 
 class C : public B {
 public:
-    void funcC() { std::cout << "Func C" << std::endl; }
+    void funcC() { cout << "Func C" << endl; }
 };
 
 int main() {
@@ -34,3 +36,4 @@ int main() {
 
     return 0;
 }
+

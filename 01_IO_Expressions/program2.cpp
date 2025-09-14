@@ -1,4 +1,6 @@
 // * Write a program to evaluate the expression (a + b)^2.
+using namespace std;
+
 
 #include <iostream>
 #include <cmath>
@@ -12,3 +14,4 @@ int main() {
     cout << "(a + b)^2 = " << result << endl;
     return 0;
 }
+

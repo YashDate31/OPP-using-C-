@@ -1,0 +1,19 @@
+// 🎯 Program: Show the syntax of a structure in C++
+
+#include <iostream>
+using namespace std;
+
+// 👉 Structure declaration
+struct Student {
+    int roll;
+    char name[20];
+    float marks;
+};
+
+int main() {
+    // 👉 Structure variable declaration
+    Student s1;
+
+    // This is just syntax. You can assign and display values too if needed.
+    return 0;
+}
